@@ -47,7 +47,7 @@ async fetchPlaces(){
     return new Promise(resolve => {
     this.pp.getPlaces(lat,long).subscribe(response => {
       resolve(response);
-     console.log(response);  
+     console.log("response of sleceted city============>>>>>>.",response);  
     },error =>{
       console.log(error);
     })
